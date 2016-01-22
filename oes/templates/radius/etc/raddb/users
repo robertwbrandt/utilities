@@ -1,0 +1,25 @@
+# -*- text -*-
+# /etc/raddb/users
+# Created by Bob Brandt (projects@brandt.ie)
+
+# Generic LDAP return attributes
+DEFAULT Auth-Type == "LDAP"
+	Class = "OPWStaff",
+	Service-Type = Login,
+	Tunnel-Medium-Type = IEEE-802,
+	Tunnel-Type = VLAN,
+	Tunnel-Private-Group-ID = 99,
+	Fall-Through = Yes
+
+$INCLUDE users.opw
+
+# These are the clean-up rules.
+DEFAULT Auth-Type == "LDAP"
+	Reply-Message += "You did not match a Radius Group.",
+	Tunnel-Private-Group-ID := 99,
+	Fall-Through = No
+
+DEFAULT Auth-Type = System
+	Auth-Type := Reject,
+	Reply-Message += "You have been denied access.",
+	Fall-Through = No

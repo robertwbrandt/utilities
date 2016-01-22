@@ -1,0 +1,3583 @@
+# /etc/raddb/users.opw
+# Created by Bob Brandt (projects@brandt.ie)
+
+
+################################################################################
+# Members for group cn=Radius-Basic,ou=RemoteAccess,o=OPW
+#
+radiustest
+	Reply-Message += "You are a member of the Basic Group",
+	Tunnel-Private-Group-ID := 99,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-IT,ou=RemoteAccess,o=OPW
+#
+admin
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+backdoor
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+backupadmin
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+ndsadmin
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+serveradminguy
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+osullivans
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+orawl
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+kerranel
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+keenant
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+nextiraone
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+maherj
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+loanlt
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+byrnemic
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+cusacka
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+kavanap
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+helpdesk
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+kmaule
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+mcdonneg
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+morleyp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+kelleherf
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+hunterg
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+meehana
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+murrayd
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+brennanp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+cogavinp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+macmahof
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+devereuf
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+colmank
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+dorneyd
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+murtaghc
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+smithp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+applebyp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+mcelroyd
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+greenej
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+bradyp
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+obrienw
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+burkel
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+stewartl
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+fitzpade
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+monkss
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+brandtb
+	Reply-Message += "You are a member of the IT Group",
+	Class := CACS:0/ebf42/ac8c8e6/administrator,
+	Tunnel-Private-Group-ID := 150,
+	Alcatel-Lucent-Asa-Access = "all",
+	Alcatel-Lucent-Acce-Priv-F-R1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-R2 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W1 = 0xFFFFFFFF,
+	Alcatel-Lucent-Acce-Priv-F-W2 = 0xFFFFFFFF,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-MAC,ou=RemoteAccess,o=OPW
+#
+smythk
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+liths
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+osheaa
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+cooneyp
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+mcgrathc
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+smytht
+	Reply-Message += "You are a member of the Trim MAC Group",
+	Tunnel-Private-Group-ID := 10,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-AS,ou=RemoteAccess,o=OPW
+#
+carrollb
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+crowleyj
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+batranieck
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mccarvillec
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+poncel
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+nolant
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+ibrahimd
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+boylep
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+nolans
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+tritschn
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+vanvuurr
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+solbrigc
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+murphyro
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+reynoldsb
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+durgap
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+finnd
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcinerneyj
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+knightm
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+coffeyb
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kramarczyka
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+keeleyd
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+leavyf
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+burkes
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+listonb
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcmahone
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+ryander
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dolanh
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+boylanm
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mccoya
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dunbarc
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mccanna
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mceldowneyc
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+quinnt
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcgrathf
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+moorech
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kudybag
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+oconnors
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+meaghere
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+foxand
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+daviesa
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+woodss
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcloughd
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mathewss
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+sobiecle
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+bendayan
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+doylegr
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+hurleya
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dowlingm
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+vandenh
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+parkerz
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+pmsco
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcloonek
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+harveyg
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+osullivg
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+rolfea
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+oconnorc
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+fagang
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+rogersp
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+collinsed
+	Reply-Message += "You are a member of the Trim AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Engineers,ou=RemoteAccess,o=OPW
+#
+robinsonj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+rhatiganv
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mccormae
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mcnameep
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+clunep
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+rooneyp
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dugdalec
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dempseym
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+brownea
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+steelep
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mullend
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+foleyw
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+meliaj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gibbonst
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+haltont
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cullenn
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cassidyj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+ennisp
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+murphybn
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mulligaj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+obrienk
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+speerst
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gantleyj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cantyf
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+workstation
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+flaherts
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+meliak
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+healys
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+husseyv
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+rooneyj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dervanj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+walshw
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+murtaghg
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gallaghp
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+bamburys
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+murphyj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+curtinj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+keoghj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dowdsj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+hayess
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cunningm
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mccannc
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+weldons
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gebref
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+crosbies
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lennoxl
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+byrnek
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+nicholsono
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+heneghan
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+walshn
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+hughese
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+nicaoidh
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cafferke
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+smithf
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+harneya
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+butlerc
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+pooleg
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+kiernanp
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+galvinco
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lawlorr
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+martinj
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+hayesm
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+adamsonm
+	Reply-Message += "You are a member of the Trim Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Corporate,ou=RemoteAccess,o=OPW
+#
+hennesseye
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+training
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+balla
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+gores
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+malonea
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+slatterys
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+mcdermj
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+collinsn
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+postroom
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+ryanne
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+mckennan
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+fhairchu
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+cooneyc
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+manganb
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+oconnele
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+deburcai
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+garryb
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+stewartj
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+doylesa
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+obriento
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+bogiea
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+bourkem
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+collinst
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+allmanc
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+ohallora
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+jacksony
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+ryanj
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+oneills
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+flanagann
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+cannyn
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+oreillya
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+odriscolla
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+murphyjo
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+colluml
+	Reply-Message += "You are a member of the Trim Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-GSA,ou=RemoteAccess,o=OPW
+#
+kiernanm
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+nolanro
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+bourkeo
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+mcloughm
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+jacksonm
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+murphyad
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+dunnemi
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+mulveyb
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+cullyi
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+larkinh
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+doneganv
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+kellyk
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+shanleyke
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+coughlanm
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+caseyjen
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+mcdermoc
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+coxa
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+martinp
+	Reply-Message += "You are a member of the Trim GSA Group",
+	Tunnel-Private-Group-ID := 25,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-HealthSafety,ou=RemoteAccess,o=OPW
+#
+camerons
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+moorek
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+galvine
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+doogank
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+lubem
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+dediosl
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+jakimb
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+goldricj
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+fitzgeraldju
+	Reply-Message += "You are a member of the Trim HealthSafety Group",
+	Tunnel-Private-Group-ID := 26,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-HistoricProps,ou=RemoteAccess,o=OPW
+#
+duffm
+	Reply-Message += "You are a member of the Trim HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+burkede
+	Reply-Message += "You are a member of the Trim HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+curleyk
+	Reply-Message += "You are a member of the Trim HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+obrienjf
+	Reply-Message += "You are a member of the Trim HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-InternalAudit,ou=RemoteAccess,o=OPW
+#
+crowleyt
+	Reply-Message += "You are a member of the Trim InternalAudit Group",
+	Tunnel-Private-Group-ID := 28,
+	Fall-Through = No
+
+nicolsonn
+	Reply-Message += "You are a member of the Trim InternalAudit Group",
+	Tunnel-Private-Group-ID := 28,
+	Fall-Through = No
+
+bourkege
+	Reply-Message += "You are a member of the Trim InternalAudit Group",
+	Tunnel-Private-Group-ID := 28,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-MandE,ou=RemoteAccess,o=OPW
+#
+carolans
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+furlongj
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+kellym
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+flynns
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+wynned
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+mccormag
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+byrnedi
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+niruaircs
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+kearnsb
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+byrnecon
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+mcgovera
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+osullijo
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+haydej
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+clarkec
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+reillyf
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+holmesd
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+milsomk
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+campbeld
+	Reply-Message += "You are a member of the Trim MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Minister,ou=RemoteAccess,o=OPW
+#
+mansergm
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+dolanant
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+caseyj
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+mitchels
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+whytejul
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+campbelv
+	Reply-Message += "You are a member of the Trim Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Projects,ou=RemoteAccess,o=OPW
+#
+hynesa
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+harnang
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+kennedyg
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+harringj
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+walshc
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+martinun
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+odohertm
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+kellyma
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+osullivo
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+projectstest
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+byrnep
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+waferb
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+odonovm
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+emmettr
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+walshcr
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+careyn
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+mckennap
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+cannonm
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+nifhairm
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+tallono
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+brennane
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+howleyn
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+bourkea
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+griffint
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+davisc
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+duffymi
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+seeryp
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+reevess
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+allenb
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+mcveighj
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+fennellym
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+odonoght
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+keeleyg
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+mcmahonj
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+kirbye
+	Reply-Message += "You are a member of the Trim Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Property,ou=RemoteAccess,o=OPW
+#
+tomasd
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+harmons
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+moylesb
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+rennickss
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+marlbom
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+whittyj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+sheahanh
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+obrienp
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mccombsc
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mcbrienu
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mcauliffed
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+harringtonp
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+gantleyl
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+devaneyd
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+carneym
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+rothwelr
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+propertytest
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+portlanj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+dunnea
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+connollyc
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+smithcl
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+crosbiej
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+nugentm
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+cheastyj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+connollm
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+sydenhaj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+drohanj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+gatitia
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mcmahonje
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+meades
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+leahye
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+kearnsr
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+farreld
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+counihanl
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+dalys
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+deadye
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+parkerg
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+fitzgeraldju
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+goldricj
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+jakimb
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+quinlanp
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+sweeneyt
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+dediosl
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+fallonm
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+lubem
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+doogank
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+galvine
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+moorek
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+camerons
+	Reply-Message += "You are a member of the Trim Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Trim-Personnel,ou=RemoteAccess,o=OPW
+#
+bagnallm
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+maguirem
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+whittys
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+smithk
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+fingletr
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+bolands
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+clincek
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+cordialm
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+flanagar
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+weldonb
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+nangleba
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+moyless
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+moorema
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+lyncha
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+laceys
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+kennyc
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+foys
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+cluskerm
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+brennant
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+breenv
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+adamsonr
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+staffordm
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+personneltest
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+leet
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+mallonp
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+murphyn
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+oreillybea
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+barryp
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+russellc
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+dillonm
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+forded
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+nolangar
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+finucanr
+	Reply-Message += "You are a member of the Trim Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Engineers,ou=RemoteAccess,o=OPW
+#
+nidhonac
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+ogormanm
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+kellyj
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+bolgert
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dowdsj
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+coylee
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+connollm
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+frencha
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gallaghj
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+wolfei
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+byrnem
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+joycet
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+adamsonm
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+walshk
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+morgana
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+balfes
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+heneghan
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+ogormang
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+molloyp
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+bolgerm
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+hayesm
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mcnamarj
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+fennella
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lowep
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mcdonnet
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+martinj
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+conference
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+ryderc
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gallaghg
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mcdonner
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+haganp
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+mcdermob
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lawlorr
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+galvinco
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+pooleg
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+butlerc
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+harneya
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lennoxl
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+duffyr
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+walshpau
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+badcocka
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+crosbies
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+gebref
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+weldons
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+bretonn
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+conroymi
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cullij
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+cafferke
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+nicaoidh
+	Reply-Message += "You are a member of the Dublin Engineers Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-QS,ou=RemoteAccess,o=OPW
+#
+qs_inet
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+dooleyt
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+obriene
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+clerkinr
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+murphyf
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+johnsons
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+quinna
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+lynchg
+	Reply-Message += "You are a member of the Dublin QS Group",
+	Tunnel-Private-Group-ID := 12,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Heritage,ou=RemoteAccess,o=OPW
+#
+osullivd
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+curleyb
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+doylemi
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+kavanagp
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+kavanaghc
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+warterse
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+mcbrider
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+geraghtp
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+herbertm
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+mahont
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+donoghug
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+hickeyd
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+hempt
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+shorttb
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+mcguirkm
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+gallaghera
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+omahonyf
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+connollh
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+parnellf
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+murphyde
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+cashm
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+wickhamd
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+oflahers
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+murphyan
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+higginsc
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+dolana
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+obrienm
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+mcmahonp
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+odeamic
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+ogallaghm
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+oshaughai
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+rourkeg
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+stapletd
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+woodsg
+	Reply-Message += "You are a member of the Dublin Heritage Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-AS,ou=RemoteAccess,o=OPW
+#
+johnsone
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+englisha
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+madejz
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+lallyp
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+finneganm
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+senkowa
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+millsg
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+loughling
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+keaneea
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcgoughs
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dockrellp
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mangang
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+inetnw5
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+scannw4
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dunneme
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mutafchv
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+dekam
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+rooneyb
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+martinao
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kipstar_nw2
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kipstar_nw3
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+quinnk
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+devling
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcelweef
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mckennam
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+moloneyp
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+oshaugtc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+osheaj
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+oneillbi
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kipstar_nw4
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+haughm
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+beagont
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+smithc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+bourkeg
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kellyi
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+monaghaj
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+walshl
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+cormicab
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+fayf
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+morganl
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+gannonp
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+wolahand
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+sargentw
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+parsonsn
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+eganl
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+walld
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+nibhriaa
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+moylans
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+englishc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kinsella
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+reganm
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcdonalj
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+cahillj
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+cartyb
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mckennak
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+ungerkl
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+carrollm
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kavanagj
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+clearymn
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+clifforp
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+leadenc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+wallf
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+fitzgerc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+mcgahonc
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+vanelser
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+kennyb
+	Reply-Message += "You are a member of the Dublin AS Group",
+	Tunnel-Private-Group-ID := 11,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Minister,ou=RemoteAccess,o=OPW
+#
+halpinl
+	Reply-Message += "You are a member of the Dublin Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+connolll
+	Reply-Message += "You are a member of the Dublin Minister Group",
+	Tunnel-Private-Group-ID := 33,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Personnel,ou=RemoteAccess,o=OPW
+#
+faganh
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+prevpay
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+rooneya
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+oneillk
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+thompsoj
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+woodsa
+	Reply-Message += "You are a member of the Dublin Personnel Group",
+	Tunnel-Private-Group-ID := 49,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Corporate,ou=RemoteAccess,o=OPW
+#
+dimondj
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+quinnan
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+kennedyk
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+longa
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+byrnebi
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+whelanm
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+mackind
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+granahap
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+collierm
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+brenbarr
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+mcguanee
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+markeyh
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+moord
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+tangneyl
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+artstudent
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+percivala
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+kennedya
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+deeryj
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+moorej
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+efastraining
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+fitzpatm
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+kingn
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+fitzgerj
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+burnsbr
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+carrollji
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+kennedyr
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+treacym
+	Reply-Message += "You are a member of the Dublin Corporate Group",
+	Tunnel-Private-Group-ID := 15,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-HistoricProps,ou=RemoteAccess,o=OPW
+#
+priestleyi
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+phoenix
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+bermingc
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+mccabeb
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+oconnoca
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+brenname
+	Reply-Message += "You are a member of the Dublin HistoricProps Group",
+	Tunnel-Private-Group-ID := 27,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-MandE,ou=RemoteAccess,o=OPW
+#
+jeffersd
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+caulfieldg
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+mccrosst
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+osullivji
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+brackenpj
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+costellok
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+kellyti
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+kipstarmande
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+havertyd
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+maloneb
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+tronix
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+bradyjn
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+ryann
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+dillonb
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+mcgeeb
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+glynnt
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+kielym
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+morrism
+	Reply-Message += "You are a member of the Dublin MandE Group",
+	Tunnel-Private-Group-ID := 32,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Projects,ou=RemoteAccess,o=OPW
+#
+mcglynnj
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+mahonc
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+brookerm
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+mccordj
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+clowryd
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+basquill
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+roxburgt
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+jenninga
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+osulliva
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+grantd
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+obrienf
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+dunforde
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+ryand
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+ohoras
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+gleesong
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+fitzsimm
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+olearyn
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+tobinp
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+brennangi
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+dolant
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+bloxhama
+	Reply-Message += "You are a member of the Dublin Projects Group",
+	Tunnel-Private-Group-ID := 36,
+	Fall-Through = No
+
+
+################################################################################
+# Members for group cn=Radius-Dublin-Property,ou=RemoteAccess,o=OPW
+#
+banvillc
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+eldins
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+murphyc
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mcmurrayl
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+propweb
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+oreillym
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+odonoghn
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+hartey
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+cunningb
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+olearyb
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+morgana
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+coylee
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+caseyc
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mckeever
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+quinnl
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+brophyd
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+moloneys
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+odwyerm
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+molloym
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+oregann
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+moloneym
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+morrisoc
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+kennedka
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+murphyte
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+hogantj
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+mcnamarm
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+obriende
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+feelya
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+heffernn
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+
+shinen
+	Reply-Message += "You are a member of the Dublin Property Group",
+	Tunnel-Private-Group-ID := 37,
+	Fall-Through = No
+

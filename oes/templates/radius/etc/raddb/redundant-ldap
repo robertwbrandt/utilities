@@ -1,0 +1,7 @@
+redundant {
+	redundant-load-balance {
+		ldap1
+		ldap2
+	}
+	ldap3
+}

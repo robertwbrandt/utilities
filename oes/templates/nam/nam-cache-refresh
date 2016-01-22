@@ -1,0 +1,10 @@
+#!/bin/bash
+checkname=sambaadmin
+if [ -x /usr/bin/namconfig ]; then
+	if ! id $checkname > /dev/null 2>&1
+	then
+		logger -s "Can not find the LDAP User $checkname. Running namconfig cache_refresh"
+		namconfig cache_refresh
+	fi
+fi
+exit $?

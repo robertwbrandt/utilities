@@ -1,0 +1,27 @@
+#
+#	Configuration file for the rlm_attr_filter module.
+#	Please see rlm_attr_filter(5) manpage for more information.
+#
+#	$Id$
+#
+#	This configuration file is used to remove almost all of the attributes
+#	From an Access-Reject message.  The RFC's say that an Access-Reject
+#	packet can contain only a few attributes.  We enforce that here.
+#
+DEFAULT
+	EAP-Message =* ANY,
+	State =* ANY,
+	Message-Authenticator =* ANY,
+	Reply-Message =* ANY,
+	Proxy-State =* ANY,
+	Class !* ANY,
+	Service-Type !* ANY,
+	Tunnel-Medium-Type !* ANY,
+	Tunnel-Type !* ANY,
+	Tunnel-Private-Group-ID !* ANY,
+	Alcatel-Lucent-Asa-Access !* ANY,
+	Alcatel-Lucent-Acce-Priv-F-R1 !* ANY,
+	Alcatel-Lucent-Acce-Priv-F-R2 !* ANY,
+	Alcatel-Lucent-Acce-Priv-F-W1 !* ANY,
+	Alcatel-Lucent-Acce-Priv-F-W2 !* ANY
+

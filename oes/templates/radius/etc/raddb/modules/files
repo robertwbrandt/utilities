@@ -1,0 +1,8 @@
+# -*- text -*-
+# /etc/raddb/modules/files
+# Created by Bob Brandt (projects@brandt.ie)
+
+files {
+	usersfile = ${confdir}/users
+	compat = no
+}

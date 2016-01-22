@@ -1,0 +1,6 @@
+# -*- text -*-
+# /etc/raddb/dictionary
+# Created by Bob Brandt (projects@brandt.ie)
+
+$INCLUDE	/usr/share/freeradius/dictionary
+$INCLUDE	/etc/raddb/dictionary.alcatel-lucent

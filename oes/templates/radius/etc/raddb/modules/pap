@@ -1,0 +1,7 @@
+# -*- text -*-
+# /etc/raddb/modules/pap
+# Created by Bob Brandt (projects@brandt.ie)
+
+pap { 
+	encryption_scheme = crypt 
+}

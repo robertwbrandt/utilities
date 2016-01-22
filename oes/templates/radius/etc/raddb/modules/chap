@@ -1,0 +1,7 @@
+# -*- text -*-
+# /etc/raddb/modules/chap
+# Created by Bob Brandt (projects@brandt.ie)
+
+chap { 
+	authtype = CHAP 
+}

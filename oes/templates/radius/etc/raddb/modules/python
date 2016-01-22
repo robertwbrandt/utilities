@@ -1,0 +1,10 @@
+python {
+        mod_instantiate = radius_opw
+        func_instantiate = instantiate
+        mod_authorize = radius_opw
+        func_authorize = authorize
+        mod_post_auth = radius_opw
+        func_post_auth = post_auth
+	mod_detach = radius_opw
+	func_detach = detach
+}

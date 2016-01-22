@@ -1,0 +1,144 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" charset="utf-8">
+<link rel="stylesheet" href="admin.css">
+
+<script type="text/javaScript">
+    function getName() {
+      serverName=top.location.host
+    }
+    function writeName() {
+      document.write(serverName);
+    }
+    function writeTitle() {
+      document.write("<title>Admin Links for ");
+      document.write(serverName);
+      document.write("</title>");
+    }
+    function writeURL(Prefix,Postfix,Text) {
+      document.write('<a href="');
+      document.write(Prefix);
+      document.write(serverName);
+      document.write(Postfix);
+      document.write('">');
+      if (Text=='') {
+        document.write(Prefix);
+        document.write(serverName);
+        document.write(Postfix);
+      } else {
+        document.write(Text);
+      }
+      document.write('</a>');
+    }
+
+    window.onload=getName();
+</script>
+<script type="text/javascript">writeTitle();</script>
+</head><body>
+
+<div id="header" style="background: url(&quot;line.gif&quot;) repeat-x scroll left top black;">
+  <div class="panel" style="background: url(&quot;backgnd.gif&quot;) no-repeat scroll 0% 0% transparent;">
+    <div class="title1">Admin Links</div>
+    <div class="title2">Office of Public Works - Administrative links for server <b><script type="text/javascript">writeName();</script></b></div>
+    <div class="opwlogo"></div>
+  </div>
+</div>
+
+
+
+
+<div id="listheader" style="position: absolute; top: 60px; left: 0pt; margin-left: 10px; width: 98%;">
+  <table cols="3" width="99%" border="0" cellpadding="0" cellspacing="0">
+  <col width="5%"/>
+  <col width="40%"/>
+  <col width="55%"/>
+  <tbody>
+    <tr style="font-weight: bold;">
+      <td class="ColumnHead" nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="ColumnHead" nowrap="nowrap" align="left">&nbsp;&nbsp;Management Interface</td>
+      <td class="ColumnHead" nowrap="nowrap" align="left">Management Link</td>
+    </tr>
+  </tbody>
+  </table>
+  <table scroll="yes" cols="3" width="99%" border="0" cellpadding="3" cellspacing="0">
+  <col width="5%"/>
+  <col width="40%"/>
+  <col width="55%"/>
+  <tbody>
+    <tr style="font-weight: bold;">
+      <td class="GroupHead" nowrap="nowrap" align="left" colspan=3>iPrint Links</td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/ipp","iPrint Printer installation");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/ipp","");</script></td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/PsmStatus","iPrint Print Manager status");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/PsmStatus","");</script></td>
+    </tr>
+
+    <tr style="font-weight: bold;">
+      <td class="GroupHead" nowrap="nowrap" align="left" colspan=3>Server Management Links</td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/oes","OES Welcome Screen");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/oes","");</script></td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8008","Novell Remote Manager");</script></td>
+      <td nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8008","");</script></td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/dhost","Dhost Console");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/dhost","");</script></td>
+    </tr>
+
+    <tr style="font-weight: bold;">
+      <td class="GroupHead" nowrap="nowrap" align="left" colspan=3>eDirectory Management Links</td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/nps","iManager");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://","/nps","");</script></td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/nds/summary","NDS iMonitor");</script></td>
+      <td nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/nds/summary","");</script></td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/nds/trace","NDS Trace");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":8028/nds/trace","");</script></td>
+    </tr>
+
+
+    <tr style="font-weight: bold;">
+      <td class="GroupHead" nowrap="nowrap" align="left" colspan=3>NetApp Open Systems SnapVault Links</td>
+    </tr>
+
+    <tr>
+      <td nowrap="nowrap" align="left">&nbsp;</td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":4092/welcome","NetApp Host Agent");</script></td>
+      <td class="DarkRow" nowrap="nowrap" align="left"><script type="text/javascript">writeURL("http://",":4092/welcome","");</script></td>
+    </tr>
+
+
+  </tbody>
+  </table>
+</div>
+
+</body></html>

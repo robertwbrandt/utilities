@@ -1,0 +1,27 @@
+# -*- text -*-
+# /etc/raddb/modules/realm
+# Created by Bob Brandt (projects@brandt.ie)
+
+#  'username@realm'
+realm suffix {
+	format = suffix
+	delimiter = "@"
+	ignore_default = no
+	ignore_null = yes
+}
+
+#  'realm\username'
+realm ntdomain {
+	format = prefix
+	delimiter = "\\"
+	ignore_default = no
+	ignore_null = yes
+}
+
+#  'username%realm'
+realm realmpercent {
+	format = suffix
+	delimiter = "%"
+	ignore_default = no
+	ignore_null = yes
+}

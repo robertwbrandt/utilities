@@ -1,0 +1,10 @@
+#%PAM-1.0
+auth	 sufficient	pam_nam.so	use_first_pass
+account	 sufficient	pam_nam.so
+password sufficient	pam_nam.so
+session	 sufficient	pam_nam.so
+
+auth     include        common-auth
+account  include        common-account
+password include        common-password
+session  include        common-session

@@ -1,0 +1,43 @@
+# sudoers file.
+#
+# This file MUST be edited with the 'visudo' command as root.
+#
+# See the sudoers man page for the details on how to write a sudoers file.
+#
+
+# Host alias specification
+
+# User alias specification
+
+# Cmnd alias specification
+
+# Defaults specification
+
+# prevent environment variables from influencing programs in an
+# unexpected or harmful way (CVE-2005-2959, CVE-2005-4158,
+# CVE-2006-0151)
+Defaults always_set_home
+Defaults !env_reset
+#Defaults secure_path="/sbin:/usr/sbin"
+
+# In the default (unconfigured) configuration, sudo asks for the root password.
+# This allows use of an ordinary user account for administration of a freshly
+# installed system. When configuring sudo, delete the two
+# following lines:
+#Defaults targetpw    # ask for the password of the target user i.e. root
+#ALL ALL=(ALL) ALL # WARNING! Only use this together with 'Defaults targetpw'!
+
+# Runas alias specification
+
+# User privilege specification
+root	ALL=(ALL) ALL
+
+# Uncomment to allow people in group wheel to run all commands
+# %wheel	ALL=(ALL)	ALL
+
+# Same thing without a password
+# %wheel	ALL=(ALL)	NOPASSWD: ALL
+
+# Samples
+# %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom
+# %users  localhost=/sbin/shutdown -h now

@@ -1,0 +1,105 @@
+a  {color:#039; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: underline}
+
+a.controlclass:link {color:#039; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration:none; cursor:pointer;}
+a.controlclass:visited {color:#039; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration:none; cursor:pointer;}
+a.controlclass:active {color:#039; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration:none; cursor:pointer;}
+a.controlclass:focus {color:blue; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration:none; cursor:pointer;}
+a.controlclass:hover {color:blue; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration:none; cursor:pointer;}
+
+body, div, p, link, td, option, li, ol, ul  {color:black; font-size:0.9em; font-family:"Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular}
+select, input, textarea {color: black; font-size: 0.8em; line-height: 1em; font-family: "Trebuchet MS", Arial, Helvetica, Geneva, Swiss, SunSans-Regular}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+// 	font-size: .9em;
+}
+
+#header
+{
+	background: black url(line.gif) left top repeat-x;
+	height: 56px;
+	overflow: hidden;
+}
+
+#header .panel
+{
+//	background: transparent url(backgnd.gif) left top no-repeat;
+	height: 56px;
+}
+
+#header .panel .title1
+{
+	float: left;
+	height: 56px;
+	padding-top: 3px;
+	padding-left: 14px;
+	font-size: 1.6em;
+	color: white;
+}
+
+#header .panel .title2
+{
+	float: left;
+	height: 56px;
+	padding-left: 40px;
+	padding-top: 36px;
+	font-size: 1.2em;
+	color: black;
+}
+
+
+
+#header .panel .opwlogo
+{
+	background: transparent url(opwlogo.jpg) right top no-repeat;
+	height: 60px;
+	padding-top: 37px;
+	padding-right: 65px;
+	color: #3A3B38;
+	text-align: right;
+}
+
+
+.ColumnHead
+{
+	background-color: #EFEEE9;
+	border-bottom: #999999 solid 1px;
+	padding-top: 2px;
+// 	padding-left: 4px;
+	font-size: .8em;
+}
+
+.GroupHead
+{
+	background-color: white;
+//	border-bottom: #999999 solid 1px;
+	padding-top: 2px;
+// 	padding-left: 4px;
+	font-size: .8em;
+}
+
+
+
+.LightRow
+{
+	background-color: white;
+//	border-bottom: #999999 solid 1px;
+//	padding-top: 2px;
+// 	padding-left: 4px;
+//	font-size: .7em;
+}
+
+.DarkRow
+{
+	background-color: #EFEEE9;
+//	border-bottom: #999999 solid 1px;
+//	padding-top: 2px;
+// 	padding-left: 4px;
+//	font-size: .7em;
+}
+
+
+

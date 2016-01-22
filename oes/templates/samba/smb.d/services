@@ -1,0 +1,22 @@
+[homes]
+	comment = %u's Home Directory
+	browseable = No
+
+[profiles]
+	comment = Network Profiles Service
+	path = /srv/home/%u
+	browseable = No
+
+[sys]
+	comment = Novell SYS Volume
+	path = /srv/sys
+	read only = Yes
+	guest ok = Yes
+	fstype = Samba
+
+[dats$]
+	comment = McAfee DATs
+	path = /srv/sys/PUBLIC/DATS
+	read only = No
+	guest ok = No
+	fstype = Samba

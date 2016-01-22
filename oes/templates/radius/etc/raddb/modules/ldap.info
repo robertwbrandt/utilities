@@ -1,0 +1,46 @@
+# LDAP Information
+ldap_identity="cn=RadiusAdmin, ou=RemoteAccess , o=opw"
+ldap_password = R@d1us@dmin
+ldap_basedn = "o=opw"
+ldap_tls_cacertfile = "/etc/raddb/certs/cert.b64"
+
+ldap_connections_number = 5 
+ldap_password_attribute = nspmPassword
+ldap_timeout = 4 
+ldap_timelimit = 3 
+ldap_net_timeout = 1 
+edir_account_policy_check = yes
+
+ldap_default_profile = "cn=OPWStaff,ou=RemoteAccess,o=OPW"
+ldap_profile_attribute = "radiusProfileDn"
+
+# The access_attr denies access if the dialupAccess Radius attribute it not found.  By commenting it out, access is granted by default.
+ldap_access_attribute = "dialupAccess" 
+
+ldap_filter = "(&(objectClass=inetOrgPerson)(cn=%{%{Stripped-User-Name}:-%{User-Name}}))"
+ldap_base_filter = "(|(objectclass=inetOrgPerson)(objectClass=radius*))" 
+ldap_groupname_attribute = cn
+ldap_groupmembership_filter = "(&(objectClass=groupOfNames)(member=%{LDAP-UserDn}))"
+ldap_groupmembership_attribute = "radiusGroupName"
+
+#  default: 0x0000 (no debugging messages)
+ldap_debug = 0x0028 
+
+# for SSL Authentication
+ldap_port = 636
+ldap_start_tls = no
+ldap_tls_mode = yes
+ldap_tls_require_cert = "allow" 
+
+# for TLS Authentication
+#ldap_port = 389
+#ldap_start_tls = yes
+#ldap_tls_mode = yes
+#ldap_tls_require_cert = "allow" 
+
+# for No Authentication
+#ldap_port = 389
+#ldap_start_tls = no
+#ldap_tls_mode = no
+#ldap_tls_require_cert = "never" 
+

@@ -1,0 +1,14 @@
+[print$]
+        comment = Samba Printer Drivers
+        path = /var/lib/samba/drivers
+        write list = @ntadmin, root
+        force group = ntadmin
+        create mask = 0664
+        directory mask = 0775
+
+[printers]
+        comment = All Printers
+        path = /var/tmp
+        create mask = 0600
+        printable = Yes
+        browseable = No

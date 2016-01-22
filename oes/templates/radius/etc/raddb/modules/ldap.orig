@@ -1,0 +1,352 @@
+# -*- text -*-
+
+# /etc/raddb/modules/ldap
+
+# Created by Bob Brandt (projects@brandt.ie)
+
+
+
+# LDAP Information
+
+ldap_identity = "cn=RadiusAdmin, ou=RemoteAccess , o=opw"
+
+ldap_password = R@d1us@dmin
+
+ldap_basedn = "o=opw"
+
+ldap_tls_cacertfile = "/etc/raddb/certs/cert.b64"
+
+
+
+ldap_connections_number = 5 
+
+ldap_password_attribute = nspmPassword
+
+ldap_timeout = 4 
+
+ldap_timelimit = 3 
+
+ldap_net_timeout = 1 
+
+edir_account_policy_check = yes
+
+
+
+ldap_default_profile = "cn=OPWStaff,ou=RemoteAccess,o=OPW"
+
+ldap_profile_attribute = "radiusProfileDn"
+
+
+
+# The access_attr denies access if the dialupAccess Radius attribute it not found.  By commenting it out, access is granted by default.
+
+ldap_access_attribute = "dialupAccess" 
+
+
+
+ldap_filter = "(&(objectClass=inetOrgPerson)(cn=%{%{Stripped-User-Name}:-%{User-Name}}))"
+
+ldap_base_filter = "(|(objectclass=inetOrgPerson)(objectClass=radius*))" 
+
+ldap_groupname_attribute = cn
+
+ldap_groupmembership_filter = "(&(objectClass=groupOfNames)(member=%{control:LDAP-UserDn}))"
+
+ldap_groupmembership_attribute = "radiusGroupName"
+
+
+
+#  default: 0x0000 (no debugging messages)
+
+ldap_debug = 0x0028 
+
+
+
+# for SSL Authentication
+
+ldap_port = 636
+
+ldap_start_tls = no
+
+ldap_tls_mode = yes
+
+ldap_tls_require_cert = "allow" 
+
+
+
+# for TLS Authentication
+
+#ldap_port = 389
+
+#ldap_start_tls = yes
+
+#ldap_tls_mode = yes
+
+#ldap_tls_require_cert = "allow" 
+
+
+
+# for No Authentication
+
+#ldap_port = 389
+
+#ldap_start_tls = no
+
+#ldap_tls_mode = no
+
+#ldap_tls_require_cert = "never" 
+
+
+
+ldap localldap {	
+
+	# Basic Parameters
+
+	server = ${hostname}
+
+	identity = ${modules.ldap_identity}
+
+	password = ${modules.ldap_password}
+
+	basedn = ${modules.ldap_basedn}
+
+	filter = ${modules.ldap_filter}
+
+	base_filter = ${modules.ldap_base_filter}
+
+
+
+	dictionary_mapping = ${raddbdir}/ldap.attrmap 
+
+	ldap_connections_number = ${modules.ldap_connections_number}
+
+	password_attribute = ${modules.ldap_password_attribute}
+
+	timeout = ${modules.ldap_timeout}
+
+	timelimit = ${modules.ldap_timelimit}
+
+	net_timeout = ${modules.ldap_net_timeout}
+
+	edir_account_policy_check = ${modules.edir_account_policy_check}
+
+
+
+	# Security Parameters
+
+	start_tls = ${modules.ldap_start_tls} 
+
+	port = ${modules.ldap_port}
+
+	tls_mode = ${modules.ldap_tls_mode}
+
+	tls_cacertfile	= ${modules.ldap_tls_cacertfile}
+
+	tls_require_cert = ${modules.ldap_tls_require_cert}
+
+
+
+	# Radius Group Attributes
+
+	groupname_attribute = ${modules.ldap_groupname_attribute}
+
+	groupmembership_filter = ${modules.ldap_groupmembership_filter}
+
+	groupmembership_attribute = ${modules.ldap_groupmembership_attribute}
+
+
+
+	ldap_debug = ${modules.ldap_debug}
+
+}
+
+
+ldap ldap1 {	
+
+	# Basic Parameters
+
+	server = "nds1.opw.ie"
+
+	identity = ${modules.ldap_identity}
+
+	password = ${modules.ldap_password}
+
+	basedn = ${modules.ldap_basedn}
+
+	filter = ${modules.ldap_filter}
+
+	base_filter = ${modules.ldap_base_filter}
+
+
+
+	dictionary_mapping = ${raddbdir}/ldap.attrmap 
+
+	ldap_connections_number = ${modules.ldap_connections_number}
+
+	password_attribute = ${modules.ldap_password_attribute}
+
+	timeout = ${modules.ldap_timeout}
+
+	timelimit = ${modules.ldap_timelimit}
+
+	net_timeout = ${modules.ldap_net_timeout}
+
+	edir_account_policy_check = ${modules.edir_account_policy_check}
+
+
+
+	# Security Parameters
+
+	start_tls = ${modules.ldap_start_tls} 
+
+	port = ${modules.ldap_port}
+
+	tls_mode = ${modules.ldap_tls_mode}
+
+	tls_cacertfile	= ${modules.ldap_tls_cacertfile}
+
+	tls_require_cert = ${modules.ldap_tls_require_cert}
+
+
+
+	# Radius Group Attributes
+
+	groupname_attribute = ${modules.ldap_groupname_attribute}
+
+	groupmembership_filter = ${modules.ldap_groupmembership_filter}
+
+	groupmembership_attribute = ${modules.ldap_groupmembership_attribute}
+
+
+
+	ldap_debug = ${modules.ldap_debug}
+
+}
+
+
+
+ldap ldap2 {	
+
+	# Basic Parameters
+
+	server = "nds2.opw.ie"
+
+	identity = ${modules.ldap_identity}
+
+	password = ${modules.ldap_password}
+
+	basedn = ${modules.ldap_basedn}
+
+	filter = ${modules.ldap_filter}
+
+	base_filter = ${modules.ldap_base_filter}
+
+
+
+	dictionary_mapping = ${raddbdir}/ldap.attrmap 
+
+	ldap_connections_number = ${modules.ldap_connections_number}
+
+	password_attribute = ${modules.ldap_password_attribute}
+
+	timeout = ${modules.ldap_timeout}
+
+	timelimit = ${modules.ldap_timelimit}
+
+	net_timeout = ${modules.ldap_net_timeout}
+
+	edir_account_policy_check = ${modules.edir_account_policy_check}
+
+
+
+	# Security Parameters
+
+	start_tls = ${modules.ldap_start_tls} 
+
+	port = ${modules.ldap_port}
+
+	tls_mode = ${modules.ldap_tls_mode}
+
+	tls_cacertfile	= ${modules.ldap_tls_cacertfile}
+
+	tls_require_cert = ${modules.ldap_tls_require_cert}
+
+
+
+	# Radius Group Attributes
+
+	groupname_attribute = ${modules.ldap_groupname_attribute}
+
+	groupmembership_filter = ${modules.ldap_groupmembership_filter}
+
+	groupmembership_attribute = ${modules.ldap_groupmembership_attribute}
+
+
+
+	ldap_debug = ${modules.ldap_debug}
+
+}
+
+
+
+ldap ldap3 {	
+
+	# Basic Parameters
+
+	server = "nds3.opw.ie"
+
+	identity = ${modules.ldap_identity}
+
+	password = ${modules.ldap_password}
+
+	basedn = ${modules.ldap_basedn}
+
+	filter = ${modules.ldap_filter}
+
+	base_filter = ${modules.ldap_base_filter}
+
+
+
+	dictionary_mapping = ${raddbdir}/ldap.attrmap 
+
+	ldap_connections_number = ${modules.ldap_connections_number}
+
+	password_attribute = ${modules.ldap_password_attribute}
+
+	timeout = ${modules.ldap_timeout}
+
+	timelimit = ${modules.ldap_timelimit}
+
+	net_timeout = ${modules.ldap_net_timeout}
+
+	edir_account_policy_check = ${modules.edir_account_policy_check}
+
+
+
+	# Security Parameters
+
+	start_tls = ${modules.ldap_start_tls} 
+
+	port = ${modules.ldap_port}
+
+	tls_mode = ${modules.ldap_tls_mode}
+
+	tls_cacertfile	= ${modules.ldap_tls_cacertfile}
+
+	tls_require_cert = ${modules.ldap_tls_require_cert}
+
+
+
+	# Radius Group Attributes
+
+	groupname_attribute = ${modules.ldap_groupname_attribute}
+
+	groupmembership_filter = ${modules.ldap_groupmembership_filter}
+
+	groupmembership_attribute = ${modules.ldap_groupmembership_attribute}
+
+
+
+	ldap_debug = ${modules.ldap_debug}
+
+}

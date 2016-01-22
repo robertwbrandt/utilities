@@ -1,0 +1,9 @@
+linelog {
+#	filename = ${logfile}
+	filename = syslog
+	format = "Login OK for %{User-Name} from %{Packet-Src-IP-Address}. %{reply:Reply-Message} ( VLAN=%{reply:Tunnel-Private-Group-ID} via %{reply:Digest-Realm} )"
+	reference = "%{%{Packet-Type}:-format}"
+	Access-Request = "Requested access from %{Packet-Src-IP-Address} for %{User-Name}. %{reply:Reply-Message} ( VLAN=%{reply:Tunnel-Private-Group-ID} via %{reply:Digest-Realm} )"
+	Access-Reject = "Rejected access from %{Packet-Src-IP-Address} for %{User-Name}."
+	Access-Challenge = "Sent challenge from %{Packet-Src-IP-Address} for %{User-Name}."
+}

@@ -1,0 +1,12 @@
+# -*- text -*-
+# /etc/raddb/modules/mschap
+# Created by Bob Brandt (projects@brandt.ie)
+
+mschap { 
+	authtype = MS-CHAP 
+	use_mppe = yes 
+	require_encryption = no 
+	require_strong = no
+	authtype = MS-CHAP
+	with_ntdomain_hack = yes
+}
