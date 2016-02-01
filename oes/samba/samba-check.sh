@@ -125,22 +125,6 @@ checkServerAccess() {
 	rc_status -v
 }
 
-checkZarafaAttr() {
-	rc_reset
-	echo -n " Zarafa user "
-	( echo "$1" | grep -i "objectClass: zarafa-user" && echo "$1" | grep -i "zarafaAccount: 1" ) > /dev/null  2>&1
-	test "$?" == "0" || ( exit 6 )
-	rc_status -v
-}
-
-checkIMAttr() {
-	rc_reset
-	echo -n " Instant Messaging user "
-	( echo "$1" | grep -i "objectClass: instantMessage" && echo "$1" | grep -i "instantMessaging: TRUE" ) > /dev/null
-	test "$?" == "0" || ( exit 6 )
-	rc_status -v
-}
-
 checkuser() {
 	filter="$1"
 	declare -i test1=1
@@ -160,8 +144,6 @@ checkuser() {
 		test2="$?"
 
 		checkServerAccess "$cn"
-		checkZarafaAttr "$object"
-		checkIMAttr "$object"
 
 	done
 	IFS=$OLDIFS
