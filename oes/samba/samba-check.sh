@@ -10,7 +10,7 @@ SAMBA_CONF="/etc/samba/smb.conf"
 EDIR_SETUP_CONF="/etc/sysconfig/novell/oes-ldap"
 SAMBA_SYSCONFIG="/etc/sysconfig/novell/nvlsamba2_sp2"
 test -f "$SAMBA_SYSCONFIG" || SAMBA_SYSCONFIG="/etc/sysconfig/novell/nvlsamba2_sp3"
-txt2ldif="/opt/brandt/utilities/txt2ldif"
+txt2ldif="/opt/brandt/utilities/txt2ldif.sh"
 version=0.2
 
 
