@@ -365,12 +365,12 @@ if __name__ == "__main__":
 			output['pools'] = {}
 			for pool in report_pools:
 				tmp = pool["start-ip"] + '-' + pool["end-ip"]
-				output['pools'].update({tmp: {'active':pool["active"], 'total':pool["total"]}})
+				output['pools'].update({tmp: {'pool':tmp, 'active':pool["active"], 'total':pool["total"]}})
 
 		if args['output'] == 'json':
 			print json.dumps(output)
 		else:
 			syslog.openlog('dhcp-pools')
 			for pool in output['pools']:
-				syslog.syslog(json.dumps({pool: output['pools'][pool]}))
+				syslog.syslog(json.dumps({"dhcp":output['pools'][pool]}))
 			syslog.closelog()
